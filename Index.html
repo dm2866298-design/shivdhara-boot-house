@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shivdhara Boot House</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f1e9;color:#171714}
+a{text-decoration:none;color:inherit}
+.top{background:#171714;color:#fff;padding:10px 6%;font-size:11px;letter-spacing:2px}
+header{padding:22px 6%;border-bottom:1px solid #ddd;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;font-size:20px;letter-spacing:1px}
+.logo span{display:block;color:#ad684d;font-size:14px}
+nav a{margin-left:25px;font-size:13px;font-weight:bold}
+nav a:hover{color:#ad684d}
+
+.hero{max-width:1200px;margin:auto;padding:80px 6%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.small{color:#ad684d;letter-spacing:3px;font-size:11px;font-weight:bold;margin-bottom:25px}
+h1{font-size:clamp(55px,8vw,100px);line-height:.9;letter-spacing:-5px}
+h1 i{font-family:Georgia,serif;font-weight:normal}
+.hero p{color:#666;font-size:17px;margin:30px 0;max-width:500px}
+.buttons{display:flex;gap:15px;flex-wrap:wrap}
+.btn{padding:16px 25px;border:1px solid #171714;font-weight:bold;font-size:12px;letter-spacing:1px}
+.dark{background:#171714;color:white}
+
+.shoe-area{height:400px;display:grid;place-items:center}
+.circle{width:330px;height:330px;border-radius:50%;background:#e7ded0;position:absolute}
+.shoe{width:290px;height:135px;background:#171714;border-radius:55% 55% 25% 20%;transform:rotate(-12deg);position:relative}
+.shoe:after{content:"";position:absolute;bottom:-15px;left:-5px;width:310px;height:22px;background:white;border:4px solid #171714;border-radius:50%}
+
+section{padding:75px 6%;border-top:1px solid #ddd}
+.container{max-width:1200px;margin:auto}
+.kicker{color:#ad684d;font-size:11px;letter-spacing:2px;font-weight:bold}
+h2{font-size:55px;line-height:1;margin:10px 0 35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fffdf8;border:1px solid #ddd;padding:20px;min-height:230px}
+.visual{height:150px;background:#eee7dc;display:grid;place-items:center;margin-bottom:18px}
+.mini{width:150px;height:65px;background:#171714;border-radius:50%;transform:rotate(-10deg)}
+.card h3{margin-bottom:5px}
+.card p{color:#666;font-size:14px}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.about p{font-size:18px;color:#666;line-height:1.8}
+.points{margin-top:25px;display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.point{border-top:1px solid #ccc;padding-top:12px;font-weight:bold}
+
+.contact{background:#171714;color:#f5f1e9}
+.contact .kicker{color:#d4b56e}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.contact p{color:#aaa;margin-top:15px}
+.info{border-top:1px solid #555;padding:18px 0}
+.info small{display:block;color:#999;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.info a:hover{color:#d4b56e}
+
+footer{background:#111;color:#999;padding:25px 6%;font-size:12px}
+
+@media(max-width:700px){
+nav{display:none}
+.hero{grid-template-columns:1fr;padding-top:55px}
+h1{font-size:58px}
+.shoe-area{height:300px}
+.circle{width:270px;height:270px}
+.shoe{width:230px;height:105px}
+.shoe:after{width:250px}
+.grid{grid-template-columns:1fr}
+.about,.contact-grid{grid-template-columns:1fr}
+.points{grid-template-columns:1fr}
+section{padding:60px 6%}
+h2{font-size:42px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">LOCAL FOOTWEAR / CHANDUR RAILWAY</div>
+
+<header>
+<a href="#" class="logo">
+SHIVDHARA
+<span>BOOT HOUSE</span>
+</a>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#footwear">Footwear</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<div class="small">FOR EVERY STEP • CHANDUR RAILWAY</div>
+
+<h1>
+Har Kadam<br>
+Mein <i>Style & Comfort</i>
+</h1>
+
+<p>
+Quality footwear, stylish designs and comfortable choices for every step.
+</p>
+
+<div class="buttons">
+<a class="btn dark" href="#footwear">EXPLORE FOOTWEAR ↗</a>
+<a class="btn" href="#contact">CONTACT US</a>
+</div>
+</div>
+
+<div class="shoe-area">
+<div class="circle"></div>
+<div class="shoe"></div>
+</div>
+</section>
+
+<section id="footwear">
+<div class="container">
+
+<div class="kicker">EXPLORE COLLECTION</div>
+<h2>Find your<br>next pair.</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="visual"><div class="mini"></div></div>
+<h3>Boots</h3>
+<p>Rugged styles for confident steps.</p>
+</div>
+
+<div class="card">
+<div class="visual"><div class="mini"></div></div>
+<h3>Sports Shoes</h3>
+<p>Comfort-focused styles for active days.</p>
+</div>
+
+<div class="card">
+<div class="visual"><div class="mini"></div></div>
+<h3>Sneakers</h3>
+<p>Everyday looks with modern style.</p>
+</div>
+
+<div class="card">
+<div class="visual"><div class="mini"></div></div>
+<h3>Formal Shoes</h3>
+<p>Smart choices for polished occasions.</p>
+</div>
+
+<div class="card">
+<div class="visual"><div class="mini"></div></div>
+<h3>Sandals</h3>
+<p>Easy and comfortable everyday footwear.</p>
+</div>
+
+<div class="card">
+<div class="visual"><div class="mini"></div></div>
+<h3>Men's Footwear</h3>
+<p>Versatile styles for every wardrobe.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+
+<div>
+<div class="kicker">ABOUT THE STORE</div>
+<h2>Made for<br>every step.</h2>
+</div>
+
+<div>
+<p>
+Shivdhara Boot House is a local footwear store in Chandur Railway, Amravati, Maharashtra, focused on stylish and comfortable footwear choices.
+</p>
+
+<div class="points">
+<div class="point">Stylish Footwear</div>
+<div class="point">Comfortable Choices</div>
+<div class="point">Quality-Focused Selection</div>
+<div class="point">Customer-Friendly Service</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container contact-grid">
+
+<div>
+<div class="kicker">VISIT & CONNECT</div>
+<h2>Let's find your<br>next pair.</h2>
+<p>For enquiries or store visits, contact Shivdhara Boot House.</p>
+</div>
+
+<div>
+
+<div class="info">
+<small>Address</small>
+Station Road, in front of Nagar Parishad,<br>
+Chandur Railway, District Amravati,<br>
+Maharashtra, India
+</div>
+
+<div class="info">
+<small>Phone</small>
+<a href="tel:+919011503607">+91 9011503607</a>
+</div>
+
+<div class="info">
+<small>WhatsApp</small>
+<a href="https://wa.me/919011503607">
+Chat on WhatsApp ↗
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Shivdhara Boot
