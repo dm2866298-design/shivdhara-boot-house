@@ -1,203 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Shivdhara Boot House | Chandur Railway</title>
-<meta name="description" content="Stylish footwear at Shivdhara Boot House, Chandur Railway, Amravati.">
+
+<meta name="description" content="Shivdhara Boot House, Station Road, Chandur Railway, Amravati. Explore stylish and comfortable footwear.">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#f8f5ef;color:#191914}
-a{text-decoration:none;color:inherit}
-.top{text-align:center;background:#171714;color:#e4c58b;padding:11px;font-size:11px;letter-spacing:2px}
-header{padding:20px 6%;display:flex;align-items:center;justify-content:space-between;background:#fffdf8}
-.logo{font-size:23px;font-weight:900;letter-spacing:2px}
-.logo span{display:block;color:#a66b42;font-size:12px;letter-spacing:5px;margin-top:4px}
-nav{display:flex;gap:24px;font-size:13px;font-weight:bold}
-nav a:hover{color:#ad7045}
-.hero{background:#eee6d9;padding:75px 7%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px}
-.kicker{color:#a66b42;font-size:12px;font-weight:bold;letter-spacing:3px}
-h1{font-size:clamp(48px,7vw,85px);line-height:.98;margin:23px 0;letter-spacing:-4px}
-h1 span{font-family:Georgia,serif;font-style:italic;color:#a66b42}
-.hero p{color:#68645d;font-size:17px;line-height:1.7;max-width:450px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:15px 22px;font-size:12px;font-weight:bold;letter-spacing:1px;border:1px solid #191914}
-.dark{background:#191914;color:white}
-.btn:hover{background:#a66b42;color:white;border-color:#a66b42}
-.hero-img{width:100%;height:390px;object-fit:cover}
-section{padding:75px 6%}
-.container{max-width:1200px;margin:auto}
-h2{font-size:clamp(38px,5vw,55px);margin:12px 0 35px;letter-spacing:-2px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border:1px solid #e5dfd4;padding:12px;transition:.25s}
-.card:hover{transform:translateY(-5px);box-shadow:0 12px 25px #00000012}
-.card img{width:100%;height:230px;object-fit:cover}
-.card h3{font-size:20px;margin:17px 8px 7px}
-.card p{font-size:14px;color:#777;margin:0 8px 17px;line-height:1.5}
-.about{background:#eee6d9}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about-grid img{width:100%;height:350px;object-fit:cover}
-.about p{color:#68645d;font-size:17px;line-height:1.9}
-.points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}
-.point{border-top:1px solid #c9bca9;padding-top:12px;font-weight:bold;font-size:14px}
-.contact{background:#191914;color:#fff}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}
-.contact p{color:#bbb;line-height:1.8;margin-top:15px}
-.info{border-top:1px solid #555;padding:18px 0;line-height:1.8}
-.info small{display:block;color:#d4b56e;letter-spacing:2px;margin-bottom:7px}
-.info a:hover{color:#d4b56e}
-.map{display:inline-block;margin-top:15px;color:#e3c58b;text-decoration:underline}
-footer{background:#111;color:#aaa;text-align:center;padding:24px;font-size:12px;line-height:2}
-.whatsapp{position:fixed;bottom:20px;right:18px;background:#168c4c;color:white;padding:15px 19px;border-radius:40px;font-size:14px;font-weight:bold;box-shadow:0 5px 18px #0003;z-index:5}
-@media(max-width:700px){
-header{padding:18px 5%}
-nav{gap:12px;font-size:11px}
-.logo{font-size:18px}
-.logo span{font-size:10px}
-.hero{grid-template-columns:1fr;padding:55px 6%}
-.hero-img{height:280px}
-.grid{grid-template-columns:1fr 1fr;gap:12px}
-.card img{height:155px}
-.card h3{font-size:16px}
-.card p{font-size:12px}
-.about-grid,.contact-grid{grid-template-columns:1fr}
-.about-grid img{height:260px}
-section{padding:55px 6%}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
-@media(max-width:380px){
-nav{gap:8px;font-size:10px}
-.grid{grid-template-columns:1fr}
-.card img{height:220px}
+
+html{
+  scroll-behavior:smooth;
 }
-</style>
-</head>
 
-<body>
+body{
+  font-family:Arial, sans-serif;
+  background:#f5f3ef;
+  color:#222;
+}
 
-<div class="top">YOUR LOCAL FOOTWEAR STORE · CHANDUR RAILWAY</div>
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
-<header>
-<a href="#home" class="logo">SHIVDHARA<span>BOOT HOUSE</span></a>
-<nav>
-<a href="#home">Home</a>
-<a href="#footwear">Collection</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+.top{
+  background:#171717;
+  color:#fff;
+  text-align:center;
+  padding:12px 20px;
+  font-size:14px;
+}
 
-<section class="hero" id="home">
-<div>
-<div class="kicker">STEP INTO STYLE</div>
-<h1>Har Kadam<br>Mein <span>Style.</span></h1>
-<p>Discover stylish footwear and comfortable choices for every occasion. Your next favourite pair is waiting for you!</p>
-<div class="buttons">
-<a class="btn dark" href="#footwear">EXPLORE COLLECTION ↗</a>
-<a class="btn" href="#contact">VISIT OUR STORE</a>
-</div>
-</div>
-<img class="hero-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900" alt="Sports shoes">
-</section>
+header{
+  background:#fff;
+  padding:20px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
 
-<section id="footwear">
-<div class="container">
-<div class="kicker">OUR COLLECTION</div>
-<h2>Find Your Next Pair.</h2>
-<div class="grid">
+.logo{
+  font-size:24px;
+  font-weight:900;
+  letter-spacing:.5px;
+}
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700" alt="Sports shoes">
-<h3>Sports Shoes</h3>
-<p>Comfort and style for active days.</p>
-</div>
+.logo span{
+  display:block;
+  color:#a66b42;
+  font-size:12px;
+  letter-spacing:2px;
+  margin-top:3px;
+}
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=700" alt="Sneakers">
-<h3>Sneakers</h3>
-<p>Modern everyday footwear.</p>
-</div>
+nav{
+  display:flex;
+  gap:24px;
+  font-size:14px;
+  font-weight:bold;
+}
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=700" alt="Women's footwear">
-<h3>Women's Footwear</h3>
-<p>Beautiful styles for every occasion.</p>
-</div>
+nav a:hover{
+  color:#a66b42;
+}
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=700" alt="Formal shoes">
-<h3>Formal Shoes</h3>
-<p>Smart looks for special occasions.</p>
-</div>
+.hero{
+  min-height:520px;
+  padding:70px 6%;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(90deg,rgba(20,20,20,.92),rgba(20,20,20,.55),rgba(20,20,20,.2)),
+    linear-gradient(135deg,#333,#a66b42);
+  color:#fff;
+}
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1562273138-f46be4ebdf33?w=700" alt="Casual footwear">
-<h3>Casual Footwear</h3>
-<p>Easy comfort for everyday use.</p>
-</div>
+.hero-content{
+  max-width:650px;
+}
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=700" alt="Trendy shoes">
-<h3>Trendy Collection</h3>
-<p>Explore footwear for different styles.</p>
-</div>
+.badge{
+  display:inline-block;
+  background:#a66b42;
+  padding:9px 15px;
+  border-radius:30px;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:1px;
+  margin-bottom:20px;
+}
 
-</div>
-</div>
-</section>
+.hero h1{
+  font-size:52px;
+  line-height:1.05;
+  margin-bottom:18px;
+}
 
-<section class="about" id="about">
-<div class="container about-grid">
-<div>
-<div class="kicker">ABOUT OUR STORE</div>
-<h2>Made For Every Step.</h2>
-<p>Welcome to Shivdhara Boot House, your local footwear store in Chandur Railway, Amravati, Maharashtra. Explore footwear choices for different occasions and everyday comfort.</p>
-<div class="points">
-<div class="point">✓ Stylish Footwear</div>
-<div class="point">✓ Variety of Choices</div>
-<div class="point">✓ Friendly Service</div>
-<div class="point">✓ Local Store</div>
-</div>
-</div>
-<img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=900" alt="Footwear collection">
-</div>
-</section>
+.hero h1 span{
+  color:#e4b17e;
+}
 
-<section class="contact" id="contact">
-<div class="container contact-grid">
-<div>
-<div class="kicker">VISIT OUR STORE</div>
-<h2>Let's Find Your Next Pair.</h2>
-<p>We look forward to welcoming you at Shivdhara Boot House!</p>
-</div>
-<div>
-<div class="info">
-<small>OUR ADDRESS</small>
-Station Road, in front of Nagar Parishad,<br>
-Chandur Railway, District Amravati,<br>
-Maharashtra, India
-<a class="map" href="https://www.google.com/maps/search/?api=1&query=Shivdhara+Boot+House+Chandur+Railway+Amravati" target="_blank">Find us on Google Maps ↗</a>
-</div>
-<div class="info">
-<small>PHONE</small>
-<a href="tel:+919011503607">+91 9011503607</a>
-</div>
-<div class="info">
-<small>WHATSAPP</small>
-<a href="https://wa.me/919011503607" target="_blank">Chat with us on WhatsApp ↗</a>
-</div>
-</div>
-</div>
-</section>
+.hero p{
+  font-size:18px;
+  line-height:1.7;
+  color:#eee;
+  margin-bottom:28px;
+}
 
-<footer>
-© 2026 Shivdhara Boot House<br>
-Chandur Railway · Amravati · Maharashtra
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919011503607" target="_blank">WhatsApp ↗</a>
-
-</body>
-</html>
+.btns{
+  display:flex;
+  gap:
