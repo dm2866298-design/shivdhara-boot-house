@@ -1,503 +1,403 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Shivdhara Boot House</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:white;color:#222}
+:root{--gold:#d7b66b;--black:#101010}
+a{text-decoration:none;color:inherit}
 
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:Arial, sans-serif;
-  background:#f5f2ed;
-  color:#171717;
-}
-
-a{
-  text-decoration:none;
+.topbar{
+background:var(--gold);
+text-align:center;
+padding:11px;
+font-size:12px;
+letter-spacing:2px;
+font-weight:bold;
 }
 
 header{
-  background:#111;
-  padding:14px 18px;
-  position:sticky;
-  top:0;
-  z-index:10;
+background:#101010;
+color:white;
+position:sticky;
+top:0;
+z-index:10;
 }
 
-.nav{
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+nav{
+max-width:1150px;
+margin:auto;
+padding:18px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
+.logo{font-size:19px;font-weight:bold;letter-spacing:2px}
+.logo span{color:var(--gold)}
 
-.logo-circle{
-  width:46px;
-  height:46px;
-  border:2px solid #d8b36a;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#d8b36a;
-  font-weight:bold;
-  font-size:13px;
-}
+.navlinks{display:flex;gap:20px;font-size:13px}
+.navlinks a:hover{color:var(--gold)}
 
-.logo-name{
-  color:white;
-  font-size:15px;
-  font-weight:bold;
-}
-
-.logo-name span{
-  display:block;
-  color:#d8b36a;
-  font-size:10px;
-  letter-spacing:2px;
-  margin-top:3px;
-}
-
-.menu{
-  display:flex;
-  gap:20px;
-}
-
-.menu a{
-  color:white;
-  font-size:13px;
-  font-weight:bold;
+.whatsapp{
+background:#20c765;
+color:white;
+padding:12px 17px;
+border-radius:30px;
+font-size:12px;
+font-weight:bold;
 }
 
 .hero{
-  background:linear-gradient(135deg,#151515,#3a2c1d);
-  color:white;
-  padding:85px 20px;
+background:linear-gradient(120deg,#111,#403525);
+color:white;
+padding:65px 20px;
 }
 
 .hero-inner{
-  max-width:1100px;
-  margin:auto;
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:35px;
 }
 
-.tag{
-  color:#d8b36a;
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:2px;
-  margin-bottom:18px;
+.eyebrow{
+color:var(--gold);
+letter-spacing:3px;
+font-size:12px;
+font-weight:bold;
 }
 
-.hero h1{
-  font-size:52px;
-  line-height:1;
-  max-width:700px;
-  margin-bottom:20px;
+h1{
+font:normal clamp(42px,6vw,68px)/1.1 Georgia,serif;
+margin:20px 0;
 }
 
-.hero h1 span{
-  color:#d8b36a;
-}
+h1 span{color:var(--gold);font-style:italic}
 
-.hero p{
-  color:#d5d0c8;
-  max-width:560px;
-  line-height:1.7;
-  margin-bottom:28px;
-}
+.hero p{color:#ddd;line-height:1.8;font-size:15px}
 
-.buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
+.hero img{
+width:100%;
+height:340px;
+object-fit:cover;
+border:3px solid var(--gold);
+border-radius:12px;
 }
 
 .btn{
-  padding:14px 20px;
-  border-radius:8px;
-  font-weight:bold;
-  font-size:14px;
-  display:inline-block;
+display:inline-block;
+padding:14px 19px;
+border-radius:30px;
+font-size:12px;
+font-weight:bold;
+margin:20px 8px 0 0;
 }
 
-.gold{
-  background:#d8b36a;
-  color:#111;
+.gold{background:var(--gold);color:#111}
+.outline{border:1px solid var(--gold);color:white}
+
+.section{
+max-width:1150px;
+margin:auto;
+padding:70px 20px;
 }
 
-.outline{
-  border:1px solid #777;
-  color:white;
-}
+.heading{text-align:center;margin-bottom:38px}
+.heading h2{font:normal 40px Georgia,serif;margin:14px 0}
+.heading p{color:#777;font-size:14px;line-height:1.7}
 
-section{
-  padding:70px 20px;
-}
-
-.container{
-  max-width:1100px;
-  margin:auto;
-}
-
-.small-title{
-  color:#a37837;
-  font-size:11px;
-  font-weight:bold;
-  letter-spacing:3px;
-  margin-bottom:10px;
-}
-
-h2{
-  font-size:36px;
-  margin-bottom:12px;
-}
-
-.sub{
-  color:#777;
-  margin-bottom:35px;
-}
-
-.categories{
-  background:white;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 }
 
 .card{
-  background:#faf8f4;
-  border:1px solid #e5ded4;
-  border-radius:16px;
-  padding:28px 22px;
+border:1px solid #eee;
+border-radius:13px;
+overflow:hidden;
+transition:.3s;
 }
 
-.icon{
-  font-size:32px;
-  margin-bottom:15px;
+.card:hover{
+transform:translateY(-7px);
+box-shadow:0 12px 25px #0002;
 }
 
-.card h3{
-  margin-bottom:7px;
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
 }
 
-.card p{
-  color:#777;
-  font-size:13px;
-  line-height:1.6;
+.info{padding:17px}
+.info h3{font:normal 23px Georgia,serif;margin-bottom:10px}
+.info p{font-size:12px;color:#777;line-height:1.7}
+.info a{display:inline-block;margin-top:15px;color:#98732c;font-size:11px;font-weight:bold}
+
+.about{background:#f7f4ed}
+
+.about-inner{
+max-width:1100px;
+margin:auto;
+padding:65px 20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:35px;
+align-items:center;
 }
 
-.about{
-  background:#171615;
-  color:white;
+.about h2{font:normal 40px Georgia,serif;margin:15px 0}
+.about p{color:#666;line-height:1.9;font-size:14px}
+
+.about-box{
+background:#111;
+color:white;
+padding:35px;
+border:1px solid var(--gold);
+border-radius:12px;
 }
 
-.about p{
-  color:#c5c0b8;
-  max-width:750px;
-  line-height:1.8;
-}
+.about-box h2{color:var(--gold)}
 
 .contact{
-  background:#f5f2ed;
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
 }
 
-.contact-box{
-  background:white;
-  border:1px solid #e3ddd4;
-  border-radius:18px;
-  padding:28px;
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
 
-.info{
-  margin-bottom:22px;
+.contact-card{
+border:1px solid #eee;
+padding:25px;
+border-radius:12px;
+line-height:2;
 }
 
-.info strong{
-  display:block;
-  margin-bottom:5px;
-}
-
-.info span{
-  color:#666;
-  line-height:1.7;
-  font-size:14px;
-}
-
-.whatsapp{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:56px;
-  height:56px;
-  border-radius:50%;
-  background:#25D366;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:13px;
-  font-weight:bold;
-  z-index:20;
-  box-shadow:0 5px 20px rgba(0,0,0,.25);
-}
+.contact-card h3{font:normal 25px Georgia,serif;margin-bottom:12px}
+.contact-card p{font-size:14px;color:#666}
+.contact-card a{color:#98732c;font-weight:bold}
 
 footer{
-  background:#111;
-  color:#aaa;
-  text-align:center;
-  padding:25px 15px;
-  font-size:12px;
+background:#111;
+color:#ccc;
+text-align:center;
+padding:30px 15px;
+font-size:12px;
+line-height:2;
 }
 
-footer strong{
-  color:#d8b36a;
+footer strong{color:var(--gold);font-size:18px}
+
+.float{
+position:fixed;
+right:15px;
+bottom:18px;
+background:#20c765;
+color:white;
+padding:15px 19px;
+border-radius:30px;
+font-size:13px;
+font-weight:bold;
+z-index:20;
 }
 
-@media(max-width:700px){
+@media(max-width:800px){
+.navlinks{display:none}
+.hero-inner{grid-template-columns:1fr}
+.products{grid-template-columns:repeat(2,1fr)}
+.about-inner{grid-template-columns:1fr}
+}
 
-  .menu{
-    display:none;
-  }
-
-  .hero{
-    padding:65px 20px;
-  }
-
-  .hero h1{
-    font-size:42px;
-  }
-
-  .grid{
-    grid-template-columns:1fr;
-  }
-
-  h2{
-    font-size:30px;
-  }
+@media(max-width:500px){
+.hero{padding:45px 18px}
+.hero img{height:245px}
+.section{padding:50px 14px}
+.products{gap:10px}
+.card img{height:150px}
+.info{padding:12px}
+.info h3{font-size:19px}
+.info p{font-size:11px}
+.heading h2{font-size:31px}
+.contact-grid{grid-template-columns:1fr}
+.about-inner{padding:50px 18px}
 }
 </style>
 </head>
 
 <body>
 
+<div class="topbar">
+STYLE • COMFORT • EVERYDAY CONFIDENCE
+</div>
+
 <header>
-  <div class="nav">
+<nav>
+<div class="logo">SHIVDHARA <span>BOOT HOUSE</span></div>
 
-    <a href="#home" class="logo">
-      <div class="logo-circle">SBH</div>
+<div class="navlinks">
+<a href="#home">Home</a>
+<a href="#collections">Collections</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
 
-      <div class="logo-name">
-        SHIVDHARA
-        <span>BOOT HOUSE</span>
-      </div>
-    </a>
-
-    <div class="menu">
-      <a href="#home">Home</a>
-      <a href="#collection">Collection</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-  </div>
+<a class="whatsapp" href="https://wa.me/919011503607">WHATSAPP</a>
+</nav>
 </header>
 
-
 <section class="hero" id="home">
-  <div class="hero-inner">
+<div class="hero-inner">
 
-    <div class="tag">SHIVDHARA BOOT HOUSE</div>
+<div>
+<div class="eyebrow">YOUR FOOTWEAR DESTINATION</div>
+<h1>Step Into<br><span>Your Style.</span></h1>
+<p>
+Welcome to Shivdhara Boot House!
+Discover stylish footwear for every occasion.
+Visit our store in Chandur Railway.
+</p>
 
-    <h1>
-      Har Kadam Mein
-      <span>Style & Comfort</span>
-    </h1>
+<a class="btn gold" href="#collections">EXPLORE COLLECTION</a>
+<a class="btn outline" href="tel:8450801596">CALL NOW</a>
+</div>
 
-    <p>
-      Stylish aur comfortable footwear ke liye
-      Shivdhara Boot House par aaiye.
-    </p>
-
-    <div class="buttons">
-
-      <a class="btn gold" href="#collection">
-        Explore Collection
-      </a>
-
-      <a class="btn outline" href="tel:+919011503607">
-        Call Now
-      </a>
-
-    </div>
-
-  </div>
+<img src="images/sports-shoes.jpg" alt="Sports Shoes">
+</div>
 </section>
 
+<section class="section" id="collections">
 
-<section class="categories" id="collection">
+<div class="heading">
+<div class="eyebrow">OUR COLLECTION</div>
+<h2>Find Your Perfect Pair</h2>
+<p>Explore our footwear collections.</p>
+</div>
 
-  <div class="container">
+<div class="products">
 
-    <div class="small-title">OUR COLLECTION</div>
+<div class="card">
+<img src="images/boots.jpg" alt="Boots">
+<div class="info">
+<h3>Boots</h3>
+<p>Stylish footwear for a confident look.</p>
+<a href="https://wa.me/919011503607?text=I%20want%20boots">ENQUIRE NOW ↗</a>
+</div>
+</div>
 
-    <h2>Footwear Collection</h2>
+<div class="card">
+<img src="images/sports-shoes.jpg" alt="Sports Shoes">
+<div class="info">
+<h3>Sports Shoes</h3>
+<p>Comfort and style for active days.</p>
+<a href="https://wa.me/919011503607?text=I%20want%20sports%20shoes">ENQUIRE NOW ↗</a>
+</div>
+</div>
 
-    <p class="sub">
-      Different occasions aur daily use ke liye footwear categories.
-    </p>
+<div class="card">
+<img src="images/sneakers.jpg" alt="Sneakers">
+<div class="info">
+<h3>Sneakers</h3>
+<p>Modern casual style for everyday wear.</p>
+<a href="https://wa.me/919011503607?text=I%20want%20sneakers">ENQUIRE NOW ↗</a>
+</div>
+</div>
 
+<div class="card">
+<img src="images/formal-shoes.jpg" alt="Formal Shoes">
+<div class="info">
+<h3>Formal Shoes</h3>
+<p>Smart footwear for special occasions.</p>
+<a href="https://wa.me/919011503607?text=I%20want%20formal%20shoes">ENQUIRE NOW ↗</a>
+</div>
+</div>
 
-    <div class="grid">
-
-      <div class="card">
-        <div class="icon">🥾</div>
-        <h3>Boots</h3>
-        <p>Stylish aur strong footwear options.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">👟</div>
-        <h3>Sports Shoes</h3>
-        <p>Active lifestyle ke liye comfortable options.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">✨</div>
-        <h3>Sneakers</h3>
-        <p>Modern casual style ke liye.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">👞</div>
-        <h3>Formal Shoes</h3>
-        <p>Smart aur clean formal look.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🩴</div>
-        <h3>Sandals</h3>
-        <p>Everyday comfort ke liye.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">👔</div>
-        <h3>Men's Footwear</h3>
-        <p>Different occasions ke liye footwear.</p>
-      </div>
-
-    </div>
-
-  </div>
-
+</div>
 </section>
-
 
 <section class="about" id="about">
+<div class="about-inner">
 
-  <div class="container">
+<div>
+<div class="eyebrow">ABOUT OUR STORE</div>
+<h2>Every Step Deserves The Right Pair.</h2>
+<p>
+Welcome to Shivdhara Boot House.
+Explore different footwear styles for your
+everyday needs and special occasions.
+Visit our store on Railway Station Road,
+Chandur Railway.
+</p>
+<a class="btn gold" href="https://wa.me/919011503607">MESSAGE US</a>
+</div>
 
-    <div class="small-title">ABOUT US</div>
+<div class="about-box">
+<h2>SHIVDHARA<br>BOOT HOUSE</h2>
+<p>Step out in comfort. Show up in style.</p>
+</div>
 
-    <h2>Shivdhara Boot House</h2>
-
-    <p>
-      Shivdhara Boot House Station Road par,
-      Nagar Parishad ke saamne, Chandur Railway,
-      District Amravati, Maharashtra mein hai.
-      Hamara focus stylish aur comfortable footwear
-      provide karna hai.
-    </p>
-
-  </div>
-
+</div>
 </section>
-
 
 <section class="contact" id="contact">
 
-  <div class="container">
+<div class="heading">
+<div class="eyebrow">GET IN TOUCH</div>
+<h2>Visit Our Store</h2>
+<p>We look forward to welcoming you!</p>
+</div>
 
-    <div class="small-title">CONTACT</div>
+<div class="contact-grid">
 
-    <h2>Visit Us</h2>
+<div class="contact-card">
+<h3>Our Address</h3>
+<p>
+Railway Station Road, Nagar Parishad,<br>
+Chandur Railway, Amravati,<br>
+Maharashtra - 444904
+</p>
 
-    <div class="contact-box">
+<a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Shivdhara+Boot+House+Chandur+Railway">
+FIND US ON MAPS ↗
+</a>
+</div>
 
-      <div class="info">
-        <strong>📍 Address</strong>
+<div class="contact-card">
+<h3>Contact Us</h3>
+<p>WhatsApp Number</p>
+<a href="https://wa.me/919011503607">9011503607</a>
+<br><br>
+<p>Call Number</p>
+<a href="tel:8450801596">8450801596</a>
+</div>
 
-        <span>
-          Station Road, in front of Nagar Parishad,
-          Chandur Railway, District Amravati,
-          Maharashtra, India
-        </span>
-      </div>
-
-
-      <div class="info">
-        <strong>📞 Phone</strong>
-
-        <span>
-          +91 9011503607
-        </span>
-      </div>
-
-
-      <div class="buttons">
-
-        <a class="btn gold"
-           href="tel:+919011503607">
-          Call Now
-        </a>
-
-        <a class="btn"
-           style="background:#25D366;color:white"
-           href="https://wa.me/919011503607?text=Hello%20Shivdhara%20Boot%20House"
-           target="_blank">
-          WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
+</div>
 </section>
 
-
 <footer>
-  © 2026 <strong>Shivdhara Boot House</strong><br>
-  Har Kadam Mein Style & Comfort
+<strong>SHIVDHARA BOOT HOUSE</strong><br>
+Railway Station Road, Nagar Parishad,<br>
+Chandur Railway, Amravati, Maharashtra - 444904<br>
+© 2026 All Rights Reserved.
 </footer>
 
-
-<a class="whatsapp"
-   href="https://wa.me/919011503607?text=Hello%20Shivdhara%20Boot%20House"
-   target="_blank">
-  WA
-</a>
+<a class="float" href="https://wa.me/919011503607">WHATSAPP US</a>
 
 </body>
-        </html>
+  </html>
+  
