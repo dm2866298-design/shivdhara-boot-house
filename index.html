@@ -6,8 +6,6 @@
 
 <title>Shivdhara Boot House | Chandur Railway</title>
 
-<meta name="description" content="Shivdhara Boot House, Station Road, Chandur Railway, Amravati. Explore stylish and comfortable footwear.">
-
 <style>
 *{
   box-sizing:border-box;
@@ -20,7 +18,7 @@ html{
 }
 
 body{
-  font-family:Arial, sans-serif;
+  font-family:Arial,Helvetica,sans-serif;
   background:#f5f3ef;
   color:#222;
 }
@@ -30,20 +28,20 @@ a{
   color:inherit;
 }
 
-.top{
+.topbar{
   background:#171717;
   color:#fff;
   text-align:center;
-  padding:12px 20px;
-  font-size:14px;
+  padding:10px 15px;
+  font-size:13px;
 }
 
 header{
   background:#fff;
-  padding:20px 6%;
+  padding:18px 6%;
   display:flex;
-  align-items:center;
   justify-content:space-between;
+  align-items:center;
   gap:20px;
   position:sticky;
   top:0;
@@ -52,23 +50,25 @@ header{
 }
 
 .logo{
-  font-size:24px;
+  font-size:22px;
   font-weight:900;
-  letter-spacing:.5px;
 }
 
-.logo span{
+.logo small{
   display:block;
+  margin-top:5px;
   color:#a66b42;
-  font-size:12px;
+  font-size:10px;
   letter-spacing:2px;
-  margin-top:3px;
 }
 
 nav{
   display:flex;
-  gap:24px;
-  font-size:14px;
+  gap:20px;
+}
+
+nav a{
+  font-size:13px;
   font-weight:bold;
 }
 
@@ -77,14 +77,19 @@ nav a:hover{
 }
 
 .hero{
-  min-height:520px;
+  min-height:500px;
   padding:70px 6%;
   display:flex;
   align-items:center;
-  background:
-    linear-gradient(90deg,rgba(20,20,20,.92),rgba(20,20,20,.55),rgba(20,20,20,.2)),
-    linear-gradient(135deg,#333,#a66b42);
   color:#fff;
+
+  background:
+    linear-gradient(90deg,
+      rgba(20,20,20,.92),
+      rgba(20,20,20,.55),
+      rgba(20,20,20,.25)
+    ),
+    linear-gradient(135deg,#292929,#a66b42);
 }
 
 .hero-content{
@@ -96,29 +101,584 @@ nav a:hover{
   background:#a66b42;
   padding:9px 15px;
   border-radius:30px;
-  font-size:12px;
+  font-size:11px;
   font-weight:bold;
   letter-spacing:1px;
   margin-bottom:20px;
 }
 
 .hero h1{
-  font-size:52px;
+  font-size:50px;
   line-height:1.05;
   margin-bottom:18px;
 }
 
 .hero h1 span{
-  color:#e4b17e;
+  color:#e5b17d;
 }
 
 .hero p{
-  font-size:18px;
-  line-height:1.7;
   color:#eee;
-  margin-bottom:28px;
+  font-size:17px;
+  line-height:1.7;
+  margin-bottom:25px;
 }
 
-.btns{
+.buttons{
   display:flex;
-  gap:
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 20px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.btn-primary{
+  background:#a66b42;
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:#8f5936;
+}
+
+.btn-white{
+  background:#fff;
+  color:#222;
+}
+
+section{
+  padding:70px 6%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.section-title small{
+  color:#a66b42;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.section-title h2{
+  font-size:32px;
+  margin-top:8px;
+}
+
+.section-title p{
+  color:#777;
+  margin-top:10px;
+}
+
+.categories{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.category{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:15px;
+  padding:28px 20px;
+  text-align:center;
+}
+
+.category-icon{
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.category h3{
+  margin-bottom:7px;
+}
+
+.category p{
+  color:#777;
+  font-size:13px;
+  line-height:1.5;
+}
+
+.products{
+  background:#fff;
+}
+
+.product-grid{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.product{
+  background:#f8f6f2;
+  border:1px solid #eee;
+  border-radius:17px;
+  overflow:hidden;
+}
+
+.product-photo{
+  width:100%;
+  height:380px;
+  object-fit:cover;
+  display:block;
+  background:#eee;
+}
+
+.product-info{
+  padding:20px;
+}
+
+.brand{
+  color:#a66b42;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.5px;
+}
+
+.product h3{
+  font-size:21px;
+  margin:7px 0;
+}
+
+.product p{
+  color:#666;
+  font-size:14px;
+  margin-bottom:14px;
+}
+
+.color{
+  display:inline-block;
+  background:#e9e7e3;
+  border-radius:20px;
+  padding:7px 12px;
+  font-size:11px;
+  font-weight:bold;
+}
+
+.about{
+  background:#171717;
+  color:#fff;
+}
+
+.about-box{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+}
+
+.about-box p{
+  color:#ccc;
+  line-height:1.9;
+  font-size:15px;
+}
+
+.contact{
+  background:#f5f3ef;
+}
+
+.contact-grid{
+  max-width:850px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:15px;
+  padding:25px;
+}
+
+.contact-card h3{
+  margin-bottom:12px;
+}
+
+.contact-card p{
+  color:#666;
+  line-height:1.8;
+}
+
+.contact-card a.phone{
+  color:#a66b42;
+  font-weight:bold;
+}
+
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:23px 15px;
+  font-size:12px;
+}
+
+@media(max-width:800px){
+
+  header{
+    padding:15px 5%;
+  }
+
+  nav{
+    gap:10px;
+  }
+
+  nav a{
+    font-size:11px;
+  }
+
+  .hero{
+    min-height:470px;
+    padding:55px 6%;
+  }
+
+  .hero h1{
+    font-size:37px;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .categories{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .product-grid{
+    grid-template-columns:1fr;
+  }
+
+  .product-photo{
+    height:auto;
+    max-height:520px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:520px){
+
+  .logo{
+    font-size:18px;
+  }
+
+  .logo small{
+    font-size:8px;
+  }
+
+  nav{
+    gap:7px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .categories{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:55px 5%;
+  }
+
+  .section-title h2{
+    font-size:27px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+📍 Station Road, In Front of Nagar Parishad, Chandur Railway, Amravati
+</div>
+
+<header>
+
+<div class="logo">
+Shivdhara Boot House
+<small>HAR KADAM MEIN STYLE & COMFORT</small>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#footwear">Footwear</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+SHIVDHARA BOOT HOUSE
+</div>
+
+<h1>
+Har Kadam Mein
+<span>Style & Comfort</span>
+</h1>
+
+<p>
+Stylish aur comfortable footwear ke liye
+Shivdhara Boot House, Chandur Railway.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary" href="#footwear">
+View Footwear
+</a>
+
+<a class="btn btn-white"
+href="https://wa.me/919011503607">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="footwear">
+
+<div class="section-title">
+
+<small>OUR COLLECTION</small>
+
+<h2>Footwear</h2>
+
+<p>
+Stylish aur comfortable footwear collection.
+</p>
+
+</div>
+
+
+<div class="categories">
+
+<div class="category">
+<div class="category-icon">👞</div>
+<h3>Formal Shoes</h3>
+<p>Smart footwear for formal occasions.</p>
+</div>
+
+<div class="category">
+<div class="category-icon">👟</div>
+<h3>Sports Shoes</h3>
+<p>Comfortable footwear for everyday use.</p>
+</div>
+
+<div class="category">
+<div class="category-icon">🥾</div>
+<h3>Boots</h3>
+<p>Strong and stylish footwear choices.</p>
+</div>
+
+<div class="category">
+<div class="category-icon">👡</div>
+<h3>Sandals</h3>
+<p>Comfortable and stylish sandals.</p>
+</div>
+
+<div class="category">
+<div class="category-icon">👟</div>
+<h3>Sneakers</h3>
+<p>Modern casual footwear.</p>
+</div>
+
+<div class="category">
+<div class="category-icon">👞</div>
+<h3>Men's Footwear</h3>
+<p>Different footwear choices for men.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="products">
+
+<div class="section-title">
+
+<small>FEATURED PRODUCT</small>
+
+<h2>Paragon Collection</h2>
+
+<p>
+Paragon Model 6158 — Olive & Brown
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<div class="product">
+
+<!-- Yahan Olive photo ka exact GitHub filename baad mein lagayenge -->
+<div class="product-photo"
+style="display:flex;align-items:center;justify-content:center;font-size:15px;color:#777;">
+OLIVE PRODUCT PHOTO
+</div>
+
+<div class="product-info">
+
+<div class="brand">
+PARAGON
+</div>
+
+<h3>
+Model 6158
+</h3>
+
+<p>
+Classic casual sandal — Olive
+</p>
+
+<span class="color">
+OLIVE
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<!-- Yahan Brown photo ka exact GitHub filename baad mein lagayenge -->
+<div class="product-photo"
+style="display:flex;align-items:center;justify-content:center;font-size:15px;color:#777;">
+BROWN PRODUCT PHOTO
+</div>
+
+<div class="product-info">
+
+<div class="brand">
+PARAGON
+</div>
+
+<h3>
+Model 6158
+</h3>
+
+<p>
+Classic casual sandal — Brown
+</p>
+
+<span class="color">
+BROWN
+</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="about" id="about">
+
+<div class="about-box">
+
+<div class="section-title">
+
+<small>ABOUT US</small>
+
+<h2>Shivdhara Boot House</h2>
+
+</div>
+
+<p>
+Shivdhara Boot House is a local footwear store in Chandur Railway,
+Amravati, offering stylish and comfortable footwear choices for
+everyday needs.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+
+<small>CONTACT</small>
+
+<h2>Visit Shivdhara Boot House</h2>
+
+</div>
+
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>📍 Address</h3>
+
+<p>
+Station Road,<br>
+In Front of Nagar Parishad,<br>
+Chandur Railway,<br>
+District Amravati, Maharashtra
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>📞 Contact</h3>
+
+<p>
+<a class="phone" href="tel:+919011503607">
++91 9011503607
+</a>
+</p>
+
+<br>
+
+<a class="btn btn-primary"
+href="https://wa.me/919011503607">
+Chat on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+© 2026 Shivdhara Boot House. All Rights Reserved.
+</footer>
+
+</body>
+  </html>
